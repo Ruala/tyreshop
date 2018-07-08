@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="styles/custom.css"/>
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-width-1-1 uk-height-viewport uk-flex uk-flex-between uk-flex-column">
+        <div>
+            <div class="tm-header uk-section uk-section-xsmall tm-background-secondary uk-light">
+                <div class="uk-container">
+                    <div uk-navbar>
+                        <div class="uk-navbar-left uk-width-1-2 uk-width-auto@s">
+                            <a class="uk-navbar-item uk-logo uk-flex uk-flex-middle" href="#">
+                                <img src="images/logo.png" alt="" class="uk-margin-small-right uk-visible@s">
+                                <div>Tyres on <br>
+                                    Wheels
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav uk-hidden@m">
+                                <li>
+                                    <a href="#offcanvas-overlay" class="uk-navbar-toggle" uk-navbar-toggle-icon
+                                       uk-toggle></a>
+                                </li>
+                            </ul>
+
+                            <ul class="uk-navbar-nav uk-visible@m uk-margin-right">
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                            <div class="uk-navbar-item">
+                                <a href="#" class="tm-button-cart">
+                                    <span class="tm-count">1</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-small tm-background-primary uk-light">
+                <div class="uk-container">
+                    <div class="tm-plan uk-flex-center uk-flex-middle" uk-grid>
+                        <div>
+                            <div class="uk-flex uk-flex-middle">
+                                <img src="images/tyre.png" alt="" class="uk-margin-small-right">
+                                <div>Select Your Tyres</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="images/rectangle.png" alt="" class="uk-display-block">
+                        </div>
+
+                        <div>
+                            <div class="uk-flex uk-flex-middle">
+                                <img src="images/cart-check.png" alt="" class="uk-margin-small-right">
+                                <div>Buy Online</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="images/rectangle.png" alt="" class="uk-display-block">
+                        </div>
+
+                        <div>
+                            <div class="uk-flex uk-flex-middle">
+                                <img src="images/delivery-van.png" alt="" class="uk-margin-small-right">
+                                <div>We Deliver and Fit!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tm-main" class="uk-section uk-padding-remove-bottom">
+            <div class="uk-container uk-margin-medium-bottom">
+                <div class="uk-flex-between uk-flex-bottom" uk-grid>
+                    <div class="uk-width-1-2@m uk-width-2-5@l">
+                        <div class="uk-position-relative uk-display-inline-block">
+                            <h1 class="uk-margin-remove">Find Your <br>
+                                Tyres
+                            </h1>
+                            <div class="uk-position-bottom-right tm-text-primary tm-text-large">
+                                <div class="uk-flex uk-flex-middle uk-flex-center">
+                                    <img src="images/car.png" alt="" class="uk-margin-small-right">
+                                    <div>search</div>
+                                </div>
+
+                                <div class="tm-margin-bottom tm-grid-divider tm-divider-primary uk-grid-small uk-grid-divider uk-flex-right uk-margin-remove-top"
+                                     uk-grid>
+                                    <div>make</div>
+                                    <div>model</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-2@m">
+                        <div class="uk-text-right@m">
+                            <img src="images/gif-substitute.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tm-filter-tyres">
+                <div class="uk-container">
+                    <div class="filter-step" data-step-name="width">
+                        <h2 class="uk-text-center">Select Your Tyre Width</h2>
+
+                        <!-- Filter controls -->
+                        <div class="tm-slider-tabs uk-margin-medium-bottom" uk-slider>
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="tm-filter-step-controls uk-slider-items tm-tab uk-child-width-auto"
+                                        uk-grid>
+                                        <li data-step-value="170">
+                                            <a href="#" class="">170</a>
+                                        </li>
+                                        <li data-step-value="175">
+                                            <a href="#" class="">175</a>
+                                        </li>
+                                        <li data-step-value="180">
+                                            <a href="#" class="">180</a>
+                                        </li>
+                                        <li data-step-value="185">
+                                            <a href="#" class="">185</a>
+                                        </li>
+                                        <li data-step-value="190">
+                                            <a href="#" class="">190</a>
+                                        </li>
+                                        <li data-step-value="200">
+                                            <a href="#" class="">200</a>
+                                        </li>
+                                        <li data-step-value="210">
+                                            <a href="#" class="">210</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a class="tm-slidenav-next uk-position-center-right" href="#" uk-slider-item="next"></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-step" data-step-name="height">
+                        <h2 class="uk-text-center">Select Your Tyre Height</h2>
+
+                        <!-- Filter controls -->
+                        <div class="tm-slider-tabs uk-margin-medium-bottom" uk-slider>
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="tm-filter-step-controls uk-slider-items tm-tab uk-child-width-auto"
+                                        uk-grid>
+                                        <li data-step-value="R13">
+                                            <a href="#" class="">R13</a>
+                                        </li>
+                                        <li data-step-value="R14">
+                                            <a href="#" class="">R14</a>
+                                        </li>
+                                        <li data-step-value="R15">
+                                            <a href="#" class="">R15</a>
+                                        </li>
+                                        <li data-step-value="R16">
+                                            <a href="#" class="">R16</a>
+                                        </li>
+                                        <li data-step-value="R17">
+                                            <a href="#" class="">R17</a>
+                                        </li>
+                                        <li data-step-value="R18">
+                                            <a href="#" class="">R18</a>
+                                        </li>
+                                        <li data-step-value="R19">
+                                            <a href="#" class="">R19</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a class="tm-slidenav-next uk-position-center-right" href="#" uk-slider-item="next"></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-step" data-step-name="profile">
+                        <h2 class="uk-text-center">Select Your Tyre Profile</h2>
+
+                        <!-- Filter controls -->
+                        <div class="tm-slider-tabs uk-margin-medium-bottom" uk-slider>
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="tm-filter-step-controls uk-slider-items tm-tab uk-child-width-auto"
+                                        uk-grid>
+                                        <li data-step-value="profile1">
+                                            <a href="#" class="">profile1</a>
+                                        </li>
+                                        <li data-step-value="profile2">
+                                            <a href="#" class="">profile2</a>
+                                        </li>
+                                        <li data-step-value="profile3">
+                                            <a href="#" class="">profile3</a>
+                                        </li>
+                                        <li data-step-value="profile4">
+                                            <a href="#" class="">profile4</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a class="tm-slidenav-next uk-position-center-right" href="#" uk-slider-item="next"></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="uk-container">
+                    <div id="tm-cards" class="tm-cards">
+                        <div class="tm-cards-top-line uk-flex uk-flex-between uk-margin-medium-bottom" uk-grid>
+                            <div>
+                                <div class="uk-grid-small" uk-grid>
+                                    <div>Now showing:</div>
+                                    <div>
+                                        <ul id="tm-filter-indicators" class="tm-tab uk-subnav" uk-margin></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>Sort: <span class="tm-text-primary">Price</span></div>
+                        </div>
+
+                        <ul class="tm-filter-list uk-child-width-1-2@l uk-link-reset" uk-grid
+                            uk-height-match=".tm-card-link">
+                            <li data-width="170" data-height="R15" data-profile="profile1">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="180" data-height="R13" data-profile="profile2">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/fulda-sportcontrol-2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="175" data-height="R14" data-profile="profile3">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/pneu-pirelli-pzero-nero-gt-3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="190" data-height="R15" data-profile="profile4">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/bridgestone-b-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="170" data-height="R16" data-profile="profile1">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/falken-azenis-fk-5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="185" data-height="R17" data-profile="profile2">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="200" data-height="R18" data-profile="profile3">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="210" data-height="R19" data-profile="profile4">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="170" data-height="R15" data-profile="profile1">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+
+                            <li data-width="200" data-height="R15" data-profile="profile2">
+                                <a href="#pop-up"
+                                   class="tm-card-link uk-card uk-card-default uk-card-hover uk-grid-collapse uk-child-width-expand"
+                                   uk-grid uk-toggle>
+                                    <div class="uk-width-auto@s uk-card-media-left uk-flex uk-flex-stretch">
+                                        <div class="tm-card-image-wrap uk-child-width-1-1 uk-flex uk-flex-stretch uk-overflow-hidden">
+                                            <div class="tm-bordered-v uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/ferrari-car-tyres-1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-flex uk-flex-stretch">
+                                        <div class="uk-card-body uk-flex uk-flex-between uk-flex-column">
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom uk-text-uppercase">Goodride</h3>
+                                                <div class="uk-text-uppercase tm-text-medium">165/70R13 79T</div>
+                                                <p class="uk-margin-small">fitted, balanced!Lorem ipsum dolor sit amet,
+                                                    consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore
+                                                </p>
+                                            </div>
+                                            <div class="tm-card-prices">
+                                                <div class="tm-text-medium">
+                                                    <span class="tm-price">$66</span> each
+                                                </div>
+                                                <div class="tm-text-medium tm-text-muted">
+                                                    Tyresales price: <span>$82</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="tm-button-cart"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-footer uk-section uk-section-xsmall tm-background-secondary uk-light">
+            <div class="uk-container">
+                <div class="uk-flex-between" uk-grid>
+                    <div>
+                        <ul class="uk-nav uk-margin-bottom">
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div>Tyres on Wheels (c) 2018</div>
+                    </div>
+
+                    <div class="uk-width-1-2@s uk-width-2-5@m">
+                        <div class="uk-text-right"><i>Tyres on wheels delivers tyres to you at discount prices. We skip
+                            the middleman to give you the best value, high quality tires in Perth.</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-nav">
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="pop-up" class="uk-flex-top uk-modal-container" uk-modal>
+    <div class="tm-modal-dialog uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <a href="" class="tm-modal-close uk-modal-close-default" uk-close="ratio: 1.8"></a>
+
+        <div class="tm-modal-header tm-grid-divider tm-divider-white uk-grid-divider uk-grid-small uk-flex-middle uk-margin-bottom uk-light"
+             uk-grid>
+            <div>
+                <div class="uk-modal-title uk-text-uppercase">Goodride r180</div>
+            </div>
+            <div>
+                <div class="uk-text-uppercase"><i>165/70R13 79T</i></div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-background-default uk-grid-collapse uk-child-width-expand uk-margin-bottom" uk-grid
+             uk-toggle>
+            <div class="uk-width-1-3@m uk-width-auto@l uk-card-media-left uk-flex uk-flex-middle uk-flex-center">
+                <img src="images/c-45-10348-bridgestone-b-280.png" alt="">
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <p>fitted, balanced!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. niam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+
+                    <div class="tm-text-medium uk-flex-center" uk-grid>
+                        <div>
+                            <div>
+                                <span class="tm-price">$66</span> each
+                            </div>
+                            <div class="uk-margin-small-bottom">plus fitting and delivery</div>
+                            <div class="tm-text-muted">
+                                Tyresales price: <span>$82</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div>
+                                    <a href="#" class="tm-button-cart"></a>
+                                </div>
+                                <div class="tm-text-muted">
+                                    Add <br>
+                                    to <br>
+                                    Cart
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-modal-footer uk-text-center uk-light">
+            <div class="uk-modal-title">How it Works</div>
+            <div><i>Installation available at your home or workplace</i></div>
+
+            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-large uk-flex-center" uk-grid>
+                <div>
+                    <div>
+                        <img src="images/popup-order.png" alt="">
+                    </div>
+                    <p>Order <br>
+                        your tyres</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/popup-calendar.png" alt="">
+                    </div>
+                    <p>Choose a <br>
+                        Time/Date</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/popup-phone.png" alt="">
+                    </div>
+                    <p>We call to <br>
+                        confirm</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/popup-car.png" alt="">
+                    </div>
+                    <p>We come <br>
+                        to you!</p>
+                </div>
+            </div>
+
+            <div><i>Our trained technician will arrive and remove your old tyres, fit and balance your new ones and
+                dispose of your tyres in an environmentally friendly manner!</i>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Scripts-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
