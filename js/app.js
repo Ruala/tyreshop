@@ -5,6 +5,7 @@ $(document).ready(function () {
         const $steps = $(".filter-step", $filterContainer);
         const $filterIndicatorContainer = $('#tm-filter-indicators', $filterContainer);
         const $cards = $('.tm-filter-list > li', $filterContainer);
+        const $image = $(".step-image", $filterContainer);
         const filters = setFilters($steps);
         let $activeStep = $steps.eq(0);
 
@@ -136,11 +137,13 @@ $(document).ready(function () {
                 $steps.index($activeStep) + i !== $steps.length
                 );
             changeStep($nextStep);
+            changeImage($nextStep);
         }
 
         function goToStep(stepName) {
             const $nextStep = filters[stepName].$step;
             changeStep($nextStep);
+            changeImage($nextStep);
         }
 
         function changeStep($nextStep) {
@@ -148,6 +151,10 @@ $(document).ready(function () {
             $activeStep.hide();
             $nextStep.show();
             $activeStep = $nextStep;
+        }
+
+        function changeImage($step) {
+            $image.attr("src", $step.attr("data-step-image"));
         }
     })();
 });
